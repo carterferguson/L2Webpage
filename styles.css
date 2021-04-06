@@ -1,37 +1,128 @@
+@font-face{
+    font-family: Raider;
+    src: url(fonts/raidercrusader.ttf)
+    
+}
+
+
+
+
+
+
+
+html{
+   background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 nav {
     margin-top: 20px;
     background-color: coral;
     display: grid;
     grid-template-columns: 5% 30% 30% 30% 5%;
+   height: 50px;
+     
 }
 
 nav a {
+    text-decoration: none;
     display: grid;
     grid-template-columns: 5% 30% 30% 30% 5%;
-    grid-template-rows: auto;
     align-self: center;
-
-
+    font-family: Raider;
     color: white;
     font-size: 30px;
     grid-column: 2/4;
-
+    
 }
 
 .home {
     grid-column: 4/4;
     justify-self: center;
-
+    
 
 
 }
+
+.home:hover{
+     color: blue;
+    
+}
+
+
+
 
 .shop {
     justify-self: center;
     grid-column: 2/2;
 }
 
+.shop:hover {
+    color: blue; 
+    
+}
+
+
+
+
 .contact {
     justify-self: center;
     grid-column: 3/3;
 }
+
+
+.contact:hover{
+    color: blue;
+    
+    
+}
+
+
+
+
+
+
+
+
+.base{
+    border-bottom: 2px solid white;
+    
+}
+
+.base:hover {
+    border-bottom: 2px solid blue;
+}
+
+
+
+body{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    
+    
+}
+.image{
+    grid-row: 1/1;
+    justify-self: left;
+    grid-column: 1/1;
+    position: absolute;
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
