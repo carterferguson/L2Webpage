@@ -7,20 +7,57 @@
     <meta charset="utf-8">
 </head>
 <script>
-var Recommended = 0; 
+    var Recommended = 6;
+    var PurchasingAmount = 0;
+    var windowSize = 0;
+    var HatchBack = 0;
+    var Truck = 0;
+    var Van = 0;
+    var Car = 0;
+    const PRICE = 15;
+
+    function run() {
+        var choice = document.getElementById('carOptions').value;
+
+
+
+        if (choice == 'car') {
+            Recommended = 3;
+        }
+        if (choice == 'SUV') {
+            Recommended = 5;
+        }
+        if (choice == 'truck') {
+            Recommended = 6;
+        }
+        if (choice == 'mini') {
+            Recommended = 2;
+        }
+        if (choice == 'sportscar') {
+            Recommended = 3;
+        }
+        if (choice == 'hatchback') {
+            Recommended = 2;
+        }
+
+
+
+        document.getElementById("answer").innerHTML = 'we recommend ' + Recommended + ' bottles of ice rival';
+
+
+    }
 
 
 
 
 
-
-
-
-
-
-
+    function Cart() {
+        PurchasingAmount = Recommended * PRICE
+         document.getElementById("cartprice").innerHTML = PurchasingAmount
+    }
 
 </script>
+
 <body>
 
     <div class="LINKS">
@@ -41,13 +78,25 @@ var Recommended = 0;
     </div>
 
     <div class="Shoping">
-
+        <img src='images/bottle.png'>
     </div>
 
-    <div class="Calculater">
+    <div class="calculator">
+        <lable>Vehicle type</lable>
+        <select id="carOptions">
+            <option value="suv">SUV</option>
+            <option value="truck">Truck</option>
+            <option value="hatchback">hatchback</option>
+            <option value="mini">mini</option>
+            <option value="sportscar">sportscar</option>
+            <option value="car">Car</option>
+        </select>
+        <button onclick="run()">Calculate</button>
 
+        <p id="answer"></p>
+        <p>To purchase the recommended amount of Ice rival <a class="Standard" onclick="Cart()">Click here</a></p>
     </div>
-
+      
 
 
 

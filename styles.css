@@ -130,20 +130,53 @@ body {
     font-family: Raider;
     margin-left: 3vh;
     padding: 0px 10px;
-     color: black;
+    color: black;
 }
 
-.ContactPage{
+.ContactPage {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto auto;
     width: 80%;
     margin: 50px auto;
 }
-.ContactPage p{
+
+.ContactPage p {
     grid-column: 2/3;
     font-family: Raider;
     font-size: 30px;
     background-color: coral;
 
+}
+
+.calculator {
+    margin: 10vh auto;
+
+
+}
+
+.Shoping {
+    padding-left: 20%;
+    grid-row: 2;
+    justify-content: center;
+    align-content: center;
+    grid-column: 1;
+}
+
+.calculator {
+    grid-column: 1;
+    grid-row: 2;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.cart{
+    
+    color: black; 
+    grid-column: 1;
+    grid-row: 2;
+    justify-content: center;
+    align-content: center;
+    
 }
